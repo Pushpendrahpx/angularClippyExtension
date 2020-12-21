@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import * as io from 'socket.io-client';
-import { environment } from 'src/environments/environment';
+import { environment } from './../../environments/environment';
 interface dataToSend {
   jwtToken:String
 }
@@ -9,6 +9,7 @@ interface dataToSend {
   providedIn: 'root'
 })
 export class ChatService {
+  
   private socket = io.io(environment.ws_url)
   constructor() {
     
