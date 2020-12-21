@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  ws_url:"http://localhost:8000/",
-  login_url:"http://localhost:8000/api/register"
+  ws_url:"http://shareable.tech/",
+  login_url:"http://shareable.tech/api/register"
 };
 
 /*
