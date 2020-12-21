@@ -1,0 +1,73 @@
+
+.containerHome{
+    padding: 10px;
+    
+}
+.inputText, .inputText > textarea,.inputSubmit,.inputSubmit > button{
+    width: -webkit-fill-available;
+    padding:10px;
+    font-size: 20px;
+}
+textarea{
+    
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 200;
+    box-shadow: 0 0 5px #dedede;
+    padding:10px;
+    outline: 0;
+    transition-duration: 0.1s;
+}
+textarea:hover{
+    
+    box-shadow: 0 0 20px #dedede;
+}
+.inputSubmit > button{
+ 
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 0;
+    font-size: 24px;
+    font-weight: 200;
+    box-shadow: 0 0 10px #dedede;
+    padding:10px;
+    outline: 0;
+    background-color: #1e319d;
+    color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0 5px #1e319d;
+}
+.inputSubmit > button:hover{
+    
+    background-color: #16236c;
+    box-shadow: 0 0 10px #16236c;
+}
+.Devices{
+    padding:5px;
+    
+    text-align: center;
+}
+.Devices > a {
+    font-size: 20px;
+    font-weight: 300;
+}
+.Devices table{
+    width: 100%;
+}
+.Devices > div>table,.Devices > div >table td,.Devices > div >table th{
+    border: 0.5px solid black;
+    border-collapse: collapse;
+}
+.recievedTexts{
+    padding:10px;
+    text-align: center;
+}
+
+.recievedTexts > div{
+    margin:5px;
+    padding:20px;
+    background-color: #dedede;
+}

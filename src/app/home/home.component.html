@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<!-- Login Form -->
+<div class="Devices">
+    <a>Available Devices</a>
+    <div style="text-align: left;">
+        <button>Refresh</button>
+        <table style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Device Name</th>
+                    <th>Actions</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>Redmi Y3</td>
+                    <td>
+                        <a href="home">Remove</a><br />
+                        <a href="/home">Rename</a>
+                    </td>
+                    <td>
+                        <input type="checkbox" /> Select
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="containerHome">
+    <div class="inputText">
+        <textarea placeholder="Type Something..." (keyup)="onChangeInput($event)"></textarea>
+    </div>
+    <div class="inputSubmit">
+        <button type="submit" (click)="onSend()">Submit</button>
+    </div>
+</div>
+<div class="recievedTexts">
+    <hr />
+    <h2>Recieving Section</h2>
+
+    <div *ngFor="let element of recieveStream">
+        
+        <b>Recieved from {{element.data.from}}</b>
+        <hr />
+        <a>Message : </a> <button>Click to Copy Message</button> <br />
+        <textarea disabled="disabled" style="width:100%; cursor:text;">{{element.data.data.data}} </textarea>
+    </div>
+</div>

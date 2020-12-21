@@ -1,0 +1,103 @@
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 0px auto;
+  font-size: 3px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Own below code */
+
+.formContainer{
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.formTitle{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    font-size: 32px;
+    text-align: left;
+    margin-left: 40px;
+}
+.formLogin{
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+}
+.formLogin > div{
+    width: 80%;
+    padding:10px;
+    margin:0 auto;
+}
+.formLogin > div > input{
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 200;
+    box-shadow: 0 0 5px #dedede;
+    padding:10px;
+    outline: 0;
+    transition-duration: 0.1s;
+}
+.formLogin > div > input:focus,.formLogin > div > input:hover{
+    box-shadow: 0 0 20px #dedede;
+}
+.formLogin > div > button{
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 0;
+    font-size: 24px;
+    font-weight: 200;
+    box-shadow: 0 0 10px #dedede;
+    padding:10px;
+    outline: 0;
+    background-color: #1e319d;
+    color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0 5px #1e319d;
+}
+.formLogin > div > button:hover{
+    background-color: #16236c;
+    box-shadow: 0 0 10px #16236c;
+}
+.formLogin > div > button:active{
+    background-color: #000;
+    box-shadow: 0 0 10px #16236c;
+}
