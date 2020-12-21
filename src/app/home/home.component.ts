@@ -24,7 +24,13 @@ export class HomeComponent implements OnInit {
   } 
   RequestPermission = async ()=>{
     
-    console.log(await Notification.requestPermission())
+    Notification.requestPermission(function(result) {
+      if(result === 'granted') {
+        navigator.serviceWorker.ready.then(function(registration) {
+          registration.showNotification('Notification with ServiceWorker');
+        });
+      }
+    });
     let DataFromLocalStore = JSON.parse(String(localStorage.getItem("messageStream")));
       this.recieveStream = DataFromLocalStore;
   }

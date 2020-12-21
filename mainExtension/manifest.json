@@ -1,0 +1,16 @@
+{
+  "name": "JioSaavn Downloader",
+  "description": "Now is the time so save your Data",
+  "version": "1.0",
+
+  "permissions": [
+  ],
+  "background":{
+    
+  },
+  "browser_action": {
+    "default_title": "JioSaavn Downloader",
+    "default_popup": "index.html"
+  },
+  "manifest_version": 2
+}
